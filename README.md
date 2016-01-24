@@ -1,5 +1,3 @@
-# Accordion via native JS
-
 # [AvNJS v1.0.0](http://selcet.com)
 ### Accordion via native JS
 
