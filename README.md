@@ -1,15 +1,11 @@
 # [AvNJS v1.0.0](http://selcet.com)
-####`Accordion via native JS`
+###Accordion via native JS
 
-Font Awesome is a full suite of 605 pictographic icons for easy scalable vector graphics on websites,
-created and maintained by [Dave Gandy](http://twitter.com/davegandy).
-Stay up to date with the latest release and announcements on Twitter:
-[@fontawesome](http://twitter.com/fontawesome).
+Accordion via native JS codding was realised as completing test issue for entering,
+[Loftschool.com](http://Loftschool.com) course - [Comprehensive training JAVASCRIPT](http://loftschool.com/course/javascript).
 
-Get started at http://fontawesome.io!
-
-## License
-- The Font Awesome font is licensed under the SIL OFL 1.1:
+## Environment Tools
+- NodeJS:
   - http://scripts.sil.org/OFL
 - Font Awesome CSS, LESS, and Sass files are licensed under the MIT License:
   - http://opensource.org/licenses/mit-license.html
