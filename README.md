@@ -1,1 +1,1 @@
-# accordion
+# Accordion via native JS
