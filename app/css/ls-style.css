@@ -1,0 +1,19 @@
+/* line 20, stdin */
+body {
+  background: #fafafa; }
+  @media screen and (max-width: 1024px) {
+    /* line 20, stdin */
+    body {
+      background: #e1e1e1;
+      font-size: 1.6em; } }
+  @media screen and (max-width: 768px) {
+    /* line 20, stdin */
+    body {
+      background: #c7c7c7;
+      font-size: 3em; } }
+
+/* line 34, stdin */
+.accordionWrapper {
+  background: #ededed; }
+
+/*# sourceMappingURL=maps/ls-style.css.map */

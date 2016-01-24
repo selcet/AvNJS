@@ -1,0 +1,36 @@
+// Color Variables
+// -----------------------------------------------------
+$primeGray:			#fafafa;
+$secondaryGray:	#e7e7e7;
+$softOrange:		#ff8663;
+
+// Screen Size Variables
+// -----------------------------------------------------
+$xlSS:					1280px;
+$lgSS:					1024px;
+$mdSS:					768px;
+$smSS:					568px;
+
+// Font Variables
+// -----------------------------------------------------
+$baseFont:			1.6em;
+$tabletFont:		3em;
+$mobileFont:		4em;
+
+body {
+	background: $primeGray;
+
+	@media screen and (max-width: $lgSS) {
+		background: darken($primeGray, 10%);
+		font-size: $baseFont;
+	}
+
+	@media screen and (max-width: $mdSS) {
+		background: darken($primeGray, 20%);
+		font-size: $tabletFont;
+	}
+}
+
+.accordionWrapper {
+	background: darken($primeGray, 5%);
+}
