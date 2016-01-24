@@ -1,5 +1,5 @@
 # [AvNJS v1.0.0](http://selcet.com)
-###`Accordion via native JS`
+####`Accordion via native JS`
 
 Font Awesome is a full suite of 605 pictographic icons for easy scalable vector graphics on websites,
 created and maintained by [Dave Gandy](http://twitter.com/davegandy).
