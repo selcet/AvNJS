@@ -6,6 +6,7 @@
 var gulp = require('gulp'),
 		sass = require('gulp-sass'),
 		browserSync = require('browser-sync'),
+		size = require('gulp-size'),
 		sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('browserSync', function() {
@@ -21,7 +22,8 @@ gulp.task('mainStyle', function(){
 		.pipe(sourcemaps.init())
 		.pipe(sass.sync({
 			sourceMap: true,
-			sourceComments: 'normal'
+			sourceComments: 'normal',
+			outputStyle: 'compressed'
 		}).on('error', sass.logError))
 		.pipe(sourcemaps.write('maps'))
 		.pipe(gulp.dest('app/css'))

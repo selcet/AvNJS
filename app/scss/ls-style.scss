@@ -1,36 +1,161 @@
+// Variables
+// =====================================================
 // Color Variables
 // -----------------------------------------------------
-$primeGray:			#fafafa;
-$secondaryGray:	#e7e7e7;
-$softOrange:		#ff8663;
+$primeBgGray:					#fafafa;
+$oddGreen:						#e7e7e7;
+$evenGreen:						#696666;
+$softOrange:					#ff8663;
+$white:								#ffffff;
+$oddItemGreen:				#4f4f4f;
 
 // Screen Size Variables
 // -----------------------------------------------------
-$xlSS:					1280px;
-$lgSS:					1024px;
-$mdSS:					768px;
-$smSS:					568px;
+$xlSS:								1280px;
+$lgSS:								1024px;
+$mdSS:								768px;
+$smSS:								568px;
 
 // Font Variables
 // -----------------------------------------------------
-$baseFont:			1.6em;
-$tabletFont:		3em;
-$mobileFont:		4em;
+$baseFont:						1.6em;
+$tabletFont:					3em;
+$mobileFont:					2em;
 
+// Border Radius Variables
+// -----------------------------------------------------
+$baseBorderRadius:		1.7em;
+$mobileBorderRadius:	0.3em;
+// =====================================================
+
+
+// Content styles
+// =====================================================
 body {
-	background: $primeGray;
+	background: $primeBgGray;
+	font-family: 'Fira Sans', sans-serif;
 
 	@media screen and (max-width: $lgSS) {
-		background: darken($primeGray, 10%);
 		font-size: $baseFont;
 	}
 
 	@media screen and (max-width: $mdSS) {
-		background: darken($primeGray, 20%);
 		font-size: $tabletFont;
+	}
+
+	@media screen and (max-width: $smSS) {
+		font-size: $mobileFont;
 	}
 }
 
-.accordionWrapper {
-	background: darken($primeGray, 5%);
+main {
+	@media screen and (max-width: $smSS) {
+		//padding: 0 15px;
+	}
+}
+
+.accrd-wrapper {
+	margin-top: 15%;
+
+	@media screen and (max-width: $smSS) {
+		margin: 0;
+		padding: 0;
+	}
+
+	ul {
+		font-weight: lighter;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			padding: 6px 0;
+		}
+	}
+}
+
+.accrd-item {
+	background: $oddGreen;
+	border-radius: $baseBorderRadius;
+	margin: 0 0 5px;
+
+	@media screen and (max-width: $smSS) {
+		border-radius: $mobileBorderRadius;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	.accrd-item-title {
+		border-radius: $baseBorderRadius;
+		padding: 14px 25px 12px;
+		position: relative;
+
+		@media screen and (max-width: $smSS) {
+			border-radius: $mobileBorderRadius;
+		}
+	}
+
+	&.even {
+		.accrd-item-title {
+			background: $evenGreen;
+			color: $white;
+			-webkit-transition: background 0.3s, color 0.3s;
+			-moz-transition: background 0.3s, color 0.3s;
+			-ms-transition: background 0.3s, color 0.3s;
+			-o-transition: background 0.3s, color 0.3s;
+			transition: background 0.3s, color 0.3s;
+		}
+	}
+
+	&.odd {
+		.accrd-item-title {
+			color: $oddItemGreen;
+			-webkit-transition: background 0.3s, color 0.3s;
+			-moz-transition: background 0.3s, color 0.3s;
+			-ms-transition: background 0.3s, color 0.3s;
+			-o-transition: background 0.3s, color 0.3s;
+			transition: background 0.3s, color 0.3s;
+		}
+	}
+
+	&:hover {
+		.accrd-item-title {
+			background: $softOrange;
+			color: $white;
+			cursor: pointer;
+			-webkit-transition: background 0.5s, color 0.5s;
+			-moz-transition: background 0.5s, color 0.5s;
+			-ms-transition: background 0.5s, color 0.5s;
+			-o-transition: background 0.5s, color 0.5s;
+			transition: background 0.5s, color 0.5s;
+		}
+	}
+
+	&.active {
+		.accrd-item-title {
+			background: $softOrange;
+			color: $white;
+		}
+
+		.accrd-icon {
+			-ms-transform: rotate(270deg);
+			-webkit-transform: rotate(270deg);
+			transform: rotate(270deg);
+		}
+
+		.accrd-item-description {
+			padding: 12px 25px 14px;
+		}
+	}
+
+	.accrd-icon {
+		top: 35%; // correction for icon vertical layout
+		right: 25px;
+		position: absolute;
+		-ms-transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+		transform: rotate(90deg);
+	}
 }
