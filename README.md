@@ -9,8 +9,7 @@ Accordion via native JS codding was realised as completing test issue for enteri
   - https://nodejs.org/en/download/
 - Gulp:
   - for install Gulp run command in terminal
-   
-  $ npm install gulp -g
+    $ npm install gulp -g
   
   ... from within project folder
   
