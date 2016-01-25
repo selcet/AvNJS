@@ -9,10 +9,9 @@ Accordion via native JS codding was realised as completing test issue for enteri
 - Gulp:
  - *for install Gulp globally - run command in terminal* `$ sudo npm install gulp -g` *and* 
  - *from within project folder for local installation* `$ npm install gulp --save-dev`
-- Gulp modules
- - *run file*:
-  - `./gulpCompile.sh` *- for* **MacOS** *or* **Linux** *system and*
-  - `gulpCompile.bat` *for* **WindowsOS**
+- Gulp modules. Just *run file*:
+ - `./gulpCompile.sh` *- for* **MacOS** *or* **Linux** *system and*
+ - `gulpCompile.bat` *for* **WindowsOS**
 
 ## Running page
 
