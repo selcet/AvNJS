@@ -5,6 +5,18 @@ Accordion via native JS codding was realised as completing test issue for enteri
 [Loftschool.com](http://Loftschool.com) course - [Comprehensive training JAVASCRIPT](http://loftschool.com/course/javascript).
 
 ## Environment Tools
+.1 NodeJS
+
+    https://nodejs.org/en/download/
+
+.2 Gulp (for install Gulp run next command in terminal)
+
+    $ npm install gulp -g
+
+... from within project folder
+
+    $ npm install gulp --save-dev
+
 .1 NodeJS:
   - https://nodejs.org/en/download/
 .2 Gulp:
