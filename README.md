@@ -5,16 +5,16 @@ Accordion via native JS codding was realised as completing test issue for enteri
 [Loftschool.com](http://Loftschool.com) course - [Comprehensive training JAVASCRIPT](http://loftschool.com/course/javascript).
 
 ## Environment Tools
-- NodeJS:
+.1 NodeJS:
   - https://nodejs.org/en/download/
-- Gulp:
+.2 Gulp:
 for install Gulp run command in terminal
 
     $ npm install gulp -g
 
   ... from within project folder
   
-  $ npm install gulp --save-dev
+    $ npm install gulp --save-dev
 - The Font Awesome documentation is licensed under the CC BY 3.0 License:
   - http://creativecommons.org/licenses/by/3.0/
 - Attribution is no longer required as of Font Awesome 3.0, but much appreciated:
