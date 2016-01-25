@@ -1,17 +1,26 @@
 {
-  "name": "y",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "browser-sync": "^2.11.1",
-    "gulp": "^3.9.0",
-    "gulp-sass": "^2.1.1",
-    "gulp-sourcemaps": "^1.6.0"
-  }
+	"name": "y",
+	"version": "1.0.0",
+	"description": "Accordion via native JS codding was realised as completing test issue for entering,\r [Loftschool.com](http://Loftschool.com) course - [Comprehensive training JAVASCRIPT](http://loftschool.com/course/javascript).",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"browser-sync": "^2.11.1",
+		"gulp": "^3.9.0",
+		"gulp-sass": "^2.1.1",
+		"gulp-size": "^2.0.0",
+		"gulp-sourcemaps": "^1.6.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/selcet/AvNJS.git"
+	},
+	"bugs": {
+		"url": "https://github.com/selcet/AvNJS/issues"
+	},
+	"homepage": "https://github.com/selcet/AvNJS#readme"
 }
