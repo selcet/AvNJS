@@ -15,8 +15,8 @@ Accordion via native JS codding was realised as completing test issue for enteri
 
 ## Running page
 All you need - run file
- - `./gulpWatch.sh` *- for* **MacOS** *or* **Linux** *system and*
- - `gulpWatch.bat` *for* **WindowsOS**
+- `./gulpWatch.sh` *- for* **MacOS** *or* **Linux** *system and*
+- `gulpWatch.bat` *for* **WindowsOS**
 
 ## Author
 - Email: dave@fontawesome.io
