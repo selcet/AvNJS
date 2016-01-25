@@ -11,7 +11,7 @@ Accordion via native JS codding was realised as completing test issue for enteri
  - *from within project folder for local installation* `$ npm install gulp --save-dev`
 - Gulp modules
  - *run file*
-  - `./gulpCompile.sh` *- for **MacOS** or **Linux** system and*
+  - `./gulpCompile.sh` *- for* **MacOS** *or* **Linux** *system and*
   - `gulpCompile.bat` *for* **WindowsOS**
 
 ## Running page
