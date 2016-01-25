@@ -5,21 +5,18 @@ Accordion via native JS codding was realised as completing test issue for enteri
 [Loftschool.com](http://Loftschool.com) course - [Comprehensive training JAVASCRIPT](http://loftschool.com/course/javascript).
 
 ## Environment Tools
-- NodeJS - https://nodejs.org/en/download/
+- NodeJS (for downloading visit page - https://nodejs.org/en/download/)
 - Gulp:
- - for install Gulp run command in terminal `$ npm install gulp -g`
-  and 
- - from within project folder `$ npm install gulp --save-dev`
-- The Font Awesome documentation is licensed under the CC BY 3.0 License:
-  - http://creativecommons.org/licenses/by/3.0/
-- Attribution is no longer required as of Font Awesome 3.0, but much appreciated:
-  - `Font Awesome by Dave Gandy - http://fontawesome.io`
-- Full details: http://fontawesome.io/license
+ - *for install Gulp globally - run command in terminal* `$ npm install gulp -g` *and* 
+ - *from within project folder for local installation* `$ npm install gulp --save-dev`
+- Gulp modules
+ - *run file*:
+  `./gulpCompile.sh` **- for MacOS or Linux system and** 
+  `gulpCompile.bat` **for WindowsOS**
 
-## Versioning
+## Running page
 
-Font Awesome will be maintained under the Semantic Versioning guidelines as much as possible. Releases will be numbered
-with the following format:
+Just run 
 
 `<major>.<minor>.<patch>`
 
