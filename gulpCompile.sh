@@ -4,7 +4,7 @@ echo Style compilation started
 set startupPath= %~dp0
 echo %startupPath%
 cd %startupPath%
-npm install gulp -g
+sudo npm install gulp -g
 npm install gulp
 npm install -?save
 gulp watch
