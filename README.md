@@ -19,6 +19,5 @@ All you need - run file
 - `gulpWatch.bat` *for* **WindowsOS**
 
 ## Author
-- Email: dave@fontawesome.io
-- Twitter: http://twitter.com/davegandy
-- GitHub: https://github.com/davegandy
+- Email: mr.selcet@gmail.com
+- GitHub: https://github.com/selcet
