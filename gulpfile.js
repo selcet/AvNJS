@@ -24,8 +24,7 @@ var paths = {
 	}
 };
 
-
-// Clean
+// Clean task
 gulp.task('clean', function (cb) {
 	del.sync([
 		paths.styles.del,
@@ -34,7 +33,7 @@ gulp.task('clean', function (cb) {
 	], cb);
 });
 
-
+// BrowserSync task
 gulp.task('browserSync', function() {
 	browserSync({
 		server: {
@@ -43,23 +42,24 @@ gulp.task('browserSync', function() {
 	})
 });
 
-gulp.task('mainStyle', function(){
-	return gulp.src('app/scss/**/*.scss') // Gets all files ending with .scss in app/scss
+// Sass compilation
+gulp.task('mainStyle', function () {
+	gulp.src(paths.styles.files)
 		.pipe(sourcemaps.init())
 		.pipe(sass.sync({
 			sourceMap: true,
-			sourceComments: 'normal',
-			outputStyle: 'compressed'
+			sourceComments: 'normal'
 		}).on('error', sass.logError))
 		.pipe(sourcemaps.write('maps'))
-		.pipe(gulp.dest('app/css'))
+		.pipe(size({ showFiles: true }))
+		.pipe(gulp.dest(paths.styles.dest))
 		.pipe(browserSync.reload({
 			stream: true
 		}))
 });
 
 //Watch task
-gulp.task('watch', ['browserSync', 'mainStyle'], function (){
+gulp.task('watch', ['clean', 'browserSync', 'mainStyle'], function (){
 	// Reloads the browser whenever Scss files change
 	gulp.watch('app/scss/**/*.scss', ['mainStyle']);
 
