@@ -7,7 +7,33 @@ var gulp = require('gulp'),
 		sass = require('gulp-sass'),
 		browserSync = require('browser-sync'),
 		size = require('gulp-size'),
-		sourcemaps = require('gulp-sourcemaps');
+		sourcemaps = require('gulp-sourcemaps'),
+		watch = require('gulp-watch'),
+		merge = require('merge-stream'),
+		del = require('del');
+
+// This is an object which defines paths for the styles.
+// The folder, files to look for and destination are all required for sass
+var paths = {
+	styles: {
+		name: 'app',
+		src: './app/scss',
+		files: './app/scss/**/*.scss',
+		dest: './app/css/',
+		del: 'app/css/**/*'
+	}
+};
+
+
+// Clean
+gulp.task('clean', function (cb) {
+	del.sync([
+		paths.styles.del,
+		// we don't want to clean this file though so we negate the pattern
+		'!app/css/deploy.txt'
+	], cb);
+});
+
 
 gulp.task('browserSync', function() {
 	browserSync({
