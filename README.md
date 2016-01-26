@@ -1,4 +1,4 @@
-# [AvNJS v1.0.0](http://selcet.com)
+# [AvNJS v1.0.0](https://github.com/selcet/AvNJS)
 ###Accordion via native JS
 
 Accordion via native JS codding was realised as completing test issue for entering,
