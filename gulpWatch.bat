@@ -1,6 +1,6 @@
 @echo off
 
 echo Style watch started
-gulp watch
+gulp
 echo Style watch finished
 echo ===================================

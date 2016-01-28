@@ -7,6 +7,6 @@ CD %startupPath%
 npm install gulp -g
 npm install gulp
 call npm install -?save
-gulp watch
+gulp
 echo Style compilation finished
 echo ===================================

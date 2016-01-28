@@ -43,7 +43,7 @@ gulp.task('browserSync', function() {
 });
 
 // Sass compilation
-gulp.task('mainStyle', function () {
+gulp.task('sass', function () {
 	gulp.src(paths.styles.files)
 		.pipe(sourcemaps.init())
 		.pipe(sass.sync({
@@ -58,10 +58,15 @@ gulp.task('mainStyle', function () {
 		}))
 });
 
+// Sass watch
+gulp.task('sass:watch', function () {
+	gulp.watch(paths.styles.files, ['sass'])
+});
+
 //Watch task
-gulp.task('watch', ['clean', 'browserSync', 'mainStyle'], function (){
+gulp.task('default', ['clean', 'browserSync', 'sass', 'sass:watch'], function (){
 	// Reloads the browser whenever Scss files change
-	gulp.watch('app/scss/**/*.scss', ['mainStyle']);
+	gulp.watch(paths.styles.files, ['sass']);
 
 	// Reloads the browser whenever HTML files change
 	gulp.watch('app/*.html', browserSync.reload);

@@ -7,6 +7,6 @@ cd %startupPath%
 sudo npm install gulp -g
 npm install gulp
 npm install -?save
-gulp watch
+gulp
 echo Style compilation finished
 echo ===================================
