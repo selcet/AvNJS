@@ -119,20 +119,6 @@ main {
 		margin-bottom: 0;
 	}
 
-	.accrd-item-title {
-		border-radius: $baseBorderRadius;
-		padding: 14px 25px 12px;
-		position: relative;
-
-		@media screen and (max-width: $smSS) {
-			padding-right: 55px;
-		}
-
-		@media screen and (max-width: $smSS) {
-			border-radius: $mobileBorderRadius;
-		}
-	}
-
 	&.even {
 		.accrd-item-title {
 			background: $evenGreen;
@@ -169,23 +155,6 @@ main {
 		}
 	}
 
-	&.active {
-		.accrd-item-title {
-			background: $softOrange;
-			color: $white;
-		}
-
-		.accrd-icon {
-			-ms-transform: rotate(270deg);
-			-webkit-transform: rotate(270deg);
-			transform: rotate(270deg);
-		}
-
-		.accrd-item-description {
-			padding: 12px 25px 14px;
-		}
-	}
-
 	.accrd-icon {
 		top: 35%; // correction for icon vertical layout
 		right: 25px;
@@ -193,5 +162,39 @@ main {
 		-ms-transform: rotate(90deg);
 		-webkit-transform: rotate(90deg);
 		transform: rotate(90deg);
+	}
+
+	.accrd-item-title {
+		border-radius: $baseBorderRadius;
+		padding: 14px 25px 12px;
+		position: relative;
+
+		& + .accrd-item-description {
+			display: none;
+		}
+
+		@media screen and (max-width: $smSS) {
+			padding-right: 55px;
+		}
+
+		@media screen and (max-width: $smSS) {
+			border-radius: $mobileBorderRadius;
+		}
+
+		&.active {
+			background: $softOrange;
+			color: $white;
+
+			.accrd-icon {
+				-ms-transform: rotate(270deg);
+				-webkit-transform: rotate(270deg);
+				transform: rotate(270deg);
+			}
+
+			& + .accrd-item-description {
+				display: block;
+				padding: 12px 25px 14px;
+			}
+		}
 	}
 }

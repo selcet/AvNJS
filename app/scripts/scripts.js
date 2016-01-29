@@ -8,7 +8,9 @@ function init() {
 	// Grab the accordion items from the page
 	var accrdItems = document.getElementsByTagName( 'div');
 	for ( var i = 0; i < accrdItems.length; i++ ) {
-		if ( accrdItems[i].className == 'accrd-item' ) accordionItems.push( accrdItems[i] );
+		if ( accrdItems[i].className == 'accrd-item even' || accrdItems[i].className == 'accrd-item odd' ) {
+			accordionItems.push( accrdItems[i] );
+		}
 	}
 
 	// Assign onclick events to the accordion item headings
@@ -24,17 +26,16 @@ function init() {
 }
 
 function toggleItem() {
-	var itemClass = this.parentNode.className;
+	var itemClass = this.className;
 
 	// Hide all items
 	for ( var i = 0; i < accordionItems.length; i++ ) {
-		accordionItems[i].className = 'accrd-item hide';
+		accordionItems[i].childNodes[i].className = 'accrd-item-title';
 	}
 
 	// Show this item if it was previously hidden
-	if ( itemClass == 'accrd-item hide' ) {
-		this.parentNode.className = 'accordionItem active';
-
+	if ( itemClass == 'accrd-item-title' ) {
+		this.className = 'accrd-item-title active';
 	}
 }
 
