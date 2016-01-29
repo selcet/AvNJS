@@ -64,7 +64,7 @@ gulp.task('sass:watch', function () {
 });
 
 //Watch task
-gulp.task('default', ['clean', 'browserSync', 'sass', 'sass:watch'], function (){
+gulp.task('default', ['browserSync', 'sass', 'sass:watch'], function (){
 	// Reloads the browser whenever Scss files change
 	gulp.watch(paths.styles.files, ['sass']);
 
