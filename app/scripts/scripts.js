@@ -13,7 +13,7 @@ function init() {
 
 	// Assign onclick events to the accordion item headings
 	for ( var j = 0; j < accordionItems.length; j++ ) {
-		var firstChild = getFirstChildWithTagName( accordionItems[j], 'accrd-item-title');
+		var firstChild = getFirstChildWithTagName( accordionItems[j], 'accrd-item-title even', 'accrd-item-title odd');
 		firstChild.onclick = toggleItem;
 	}
 
@@ -37,8 +37,9 @@ function toggleItem() {
 	}
 }
 
-function getFirstChildWithTagName( element, tagNameOne ) {
+function getFirstChildWithTagName( element, tagNameOne, tagNameTwo ) {
 	for ( var i = 0; i < element.childNodes.length; i++ ) {
-		if ( element.childNodes[i].className == tagNameOne ) return element.childNodes[i];
+		var elementClassName = element.childNodes[i].className;
+		if ( elementClassName == tagNameOne || elementClassName == tagNameTwo ) return element.childNodes[i];
 	}
 }
