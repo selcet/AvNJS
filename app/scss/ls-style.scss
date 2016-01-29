@@ -109,6 +109,12 @@ main {
 		border-radius: $mobileBorderRadius;
 	}
 
+	&.hide {
+		.accrd-item-description {
+			display: none;
+		}
+	}
+
 	&:last-child {
 		margin-bottom: 0;
 	}
