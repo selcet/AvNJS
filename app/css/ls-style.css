@@ -69,29 +69,53 @@ body {
     .accrd-item {
       border-radius: 0.3em; } }
   /* line 113, stdin */
-  .accrd-item.hide .accrd-item-description {
+  .accrd-item .accrd-item-description {
     display: none; }
   /* line 118, stdin */
   .accrd-item:last-child {
     margin-bottom: 0; }
-  /* line 123, stdin */
-  .accrd-item.even .accrd-item-title {
-    background: #696666;
-    color: #ffffff;
-    -webkit-transition: background 0.3s, color 0.3s;
-    -moz-transition: background 0.3s, color 0.3s;
-    -ms-transition: background 0.3s, color 0.3s;
-    -o-transition: background 0.3s, color 0.3s;
-    transition: background 0.3s, color 0.3s; }
-  /* line 135, stdin */
-  .accrd-item.odd .accrd-item-title {
-    color: #4f4f4f;
-    -webkit-transition: background 0.3s, color 0.3s;
-    -moz-transition: background 0.3s, color 0.3s;
-    -ms-transition: background 0.3s, color 0.3s;
-    -o-transition: background 0.3s, color 0.3s;
-    transition: background 0.3s, color 0.3s; }
-  /* line 146, stdin */
+  /* line 122, stdin */
+  .accrd-item .accrd-icon {
+    top: 35%;
+    right: 25px;
+    position: absolute;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); }
+  /* line 131, stdin */
+  .accrd-item .accrd-item-title {
+    border-radius: 1.7em;
+    padding: 14px 25px 12px;
+    position: relative; }
+    /* line 136, stdin */
+    .accrd-item .accrd-item-title.even {
+      background: #696666;
+      color: #ffffff;
+      -webkit-transition: background 0.3s, color 0.3s;
+      -moz-transition: background 0.3s, color 0.3s;
+      -ms-transition: background 0.3s, color 0.3s;
+      -o-transition: background 0.3s, color 0.3s;
+      transition: background 0.3s, color 0.3s; }
+    /* line 146, stdin */
+    .accrd-item .accrd-item-title.odd {
+      color: #4f4f4f;
+      -webkit-transition: background 0.3s, color 0.3s;
+      -moz-transition: background 0.3s, color 0.3s;
+      -ms-transition: background 0.3s, color 0.3s;
+      -o-transition: background 0.3s, color 0.3s;
+      transition: background 0.3s, color 0.3s; }
+    /* line 155, stdin */
+    .accrd-item .accrd-item-title + .accrd-item-description {
+      display: none; }
+    @media screen and (max-width: 568px) {
+      /* line 131, stdin */
+      .accrd-item .accrd-item-title {
+        padding-right: 55px; } }
+    @media screen and (max-width: 568px) {
+      /* line 131, stdin */
+      .accrd-item .accrd-item-title {
+        border-radius: 0.3em; } }
+  /* line 169, stdin */
   .accrd-item:hover .accrd-item-title {
     background: #ff8663;
     color: #ffffff;
@@ -101,42 +125,18 @@ body {
     -ms-transition: background 0.5s, color 0.5s;
     -o-transition: background 0.5s, color 0.5s;
     transition: background 0.5s, color 0.5s; }
-  /* line 158, stdin */
-  .accrd-item .accrd-icon {
-    top: 35%;
-    right: 25px;
-    position: absolute;
-    -ms-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg); }
-  /* line 167, stdin */
-  .accrd-item .accrd-item-title {
-    border-radius: 1.7em;
-    padding: 14px 25px 12px;
-    position: relative; }
-    /* line 172, stdin */
-    .accrd-item .accrd-item-title + .accrd-item-description {
-      display: none; }
-    @media screen and (max-width: 568px) {
-      /* line 167, stdin */
-      .accrd-item .accrd-item-title {
-        padding-right: 55px; } }
-    @media screen and (max-width: 568px) {
-      /* line 167, stdin */
-      .accrd-item .accrd-item-title {
-        border-radius: 0.3em; } }
-    /* line 184, stdin */
-    .accrd-item .accrd-item-title.active {
-      background: #ff8663;
-      color: #ffffff; }
-      /* line 188, stdin */
-      .accrd-item .accrd-item-title.active .accrd-icon {
-        -ms-transform: rotate(270deg);
-        -webkit-transform: rotate(270deg);
-        transform: rotate(270deg); }
-      /* line 194, stdin */
-      .accrd-item .accrd-item-title.active + .accrd-item-description {
-        display: block;
-        padding: 12px 25px 14px; }
+  /* line 182, stdin */
+  .accrd-item.active .accrd-item-title {
+    background: #ff8663;
+    color: #ffffff; }
+  /* line 187, stdin */
+  .accrd-item.active .accrd-icon {
+    -ms-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg); }
+  /* line 193, stdin */
+  .accrd-item.active .accrd-item-description {
+    display: block;
+    padding: 12px 25px 14px; }
 
 /*# sourceMappingURL=maps/ls-style.css.map */
