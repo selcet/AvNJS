@@ -17,9 +17,10 @@ function init() {
 		firstChild.onclick = toggleItem;
 	}
 
-	// Hide all accordion item bodies except the first
-	for ( var k = 1; k < accordionItems.length; k++ ) {
-		accordionItems[k].childNodes = 'accrd-item-description hide';
+	// Hide all accordion item bodies except any of indexed
+	for ( var k = 0; k < accordionItems.length; k++ ) {
+		accordionItems[k].className = 'accrd-item';
+		accordionItems[0].className = 'accrd-item active';
 	}
 }
 
