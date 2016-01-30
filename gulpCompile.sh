@@ -1,12 +1,10 @@
-echo off
-
-echo Style compilation started
-set startupPath= %~dp0
-echo %startupPath%
-cd %startupPath%
+echo ===================================
+echo Installation modules started
+echo ===================================
 sudo npm install gulp -g
 npm install gulp
 npm install -?save
 gulp
-echo Style compilation finished
+echo ===================================
+echo Installation modules finished
 echo ===================================
