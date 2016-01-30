@@ -6,10 +6,7 @@ Accordion via native JS codding was realised as completing test issue for enteri
 
 ## Environment Tools
 - NodeJS (for downloading visit page - https://nodejs.org/en/download/)
-- Gulp:
- - *for install Gulp globally - run command in terminal* `$ sudo npm install gulp -g` *and* 
- - *from within project folder for local installation* `$ npm install gulp --save-dev`
-- Gulp modules. *Just run file*:
+- Gulp and Gulp modules. *Just run file*:
  - `./gulpCompile.sh` *- for* **MacOS** *or* **Linux** *system and*
  - `gulpCompile.bat` *for* **WindowsOS**
 
